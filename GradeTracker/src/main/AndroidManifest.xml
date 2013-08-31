@@ -8,12 +8,14 @@
         android:minSdkVersion="9"
         android:targetSdkVersion="17" />
 
-    <application
+    <application>
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!-- There is an IDE bug that shows that the following line is an error -->
         <activity
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:name="com.gradetracker.gradetracker.GradeTracker"
             android:label="@string/app_name" >
             <intent-filter>
