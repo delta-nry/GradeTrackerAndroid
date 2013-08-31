@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.SparseArray;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.ExpandableListView;
 
 public class GradeTracker extends ActionBarActivity {
@@ -33,12 +34,13 @@ public class GradeTracker extends ActionBarActivity {
             groups.append(j, group);
         }
     }
-/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.grade_tracker, menu);
-        return true;
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.grade_tracker, menu);
+        //getMenuInflater().inflate(R.menu.grade_tracker, menu);
+        //return true;
+        return super.onCreateOptionsMenu(menu);
     }
-*/
 }
