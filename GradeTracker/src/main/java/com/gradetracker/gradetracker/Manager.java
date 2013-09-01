@@ -62,4 +62,12 @@ public class Manager {
             System.out.println("\n" + "Invalid number; try again.");
         }
     }
+    /*  Displays names of a course corresponding to its index value
+     *  in courseList.
+     */
+    public String getCourseDetails(int i) {
+        String s = "";
+        s += courseList.get(i);
+        return s;
+    }
 }

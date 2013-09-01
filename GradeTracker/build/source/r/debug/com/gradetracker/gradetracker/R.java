@@ -886,7 +886,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f07002f;
         public static final int action_mode_bar_stub=0x7f07002e;
         public static final int action_mode_close_button=0x7f070022;
-        public static final int action_search=0x7f070044;
+        public static final int action_new_course=0x7f070044;
         public static final int action_settings=0x7f070045;
         public static final int activity_chooser_view_content=0x7f070023;
         public static final int always=0x7f07000f;
@@ -999,7 +999,7 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000c;
         /**  From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/strings.xml 
          */
-        public static final int action_add_course=0x7f0a000d;
+        public static final int action_new_course=0x7f0a000d;
         public static final int action_settings=0x7f0a000e;
         public static final int app_name=0x7f0a000f;
         public static final int hello_world=0x7f0a0010;
