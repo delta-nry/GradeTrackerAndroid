@@ -37,7 +37,11 @@ public class GradeTracker extends ActionBarActivity {
 
         for (int j = 0; j < theManager.getCourseListSize(); j++) {
             ExpandableListGroup group = new ExpandableListGroup(theManager.getCourseDetails(j));
-            for (int i = 0; i < 5; i++) {
+            // Say that no grades are in a course containing no grades
+            if (theManager.getCourse(j).getMarksListSize() == 0) {
+                Toast.makeText(this, "No grades are in this course.", Toast.LENGTH_LONG).show();
+            }
+            for (int i = 0; i < theManager.getCourse(j).getMarksListSize(); i++) {
                 // Create new grades
                 Grade grade = new Grade("New Grade", 100.0);
                 theManager.getCourse(j).addItem(grade);

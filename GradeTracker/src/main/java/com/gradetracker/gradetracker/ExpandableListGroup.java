@@ -7,6 +7,7 @@ import java.util.List;
  * Created by nathan on 2013-08-26.
  */
 public class ExpandableListGroup {
+    // Check if possible to change below variables to private
     public String name;
     public final List<String> children = new ArrayList<String>();
 

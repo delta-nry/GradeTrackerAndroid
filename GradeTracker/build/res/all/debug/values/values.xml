@@ -482,8 +482,8 @@
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
     <!-- From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/dimens.xml -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
     <!-- From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values/values.xml -->
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>

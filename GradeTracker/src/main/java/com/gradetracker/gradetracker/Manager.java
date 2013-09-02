@@ -1,7 +1,7 @@
 package com.gradetracker.gradetracker;
 
 /*  This class contains an ArrayList which contains the users classes.
- *  There should only be one Manager instance in Menu.java, as
+ *  There should only be one Manager instance in the entire program, as
  *  this Manager class holds the ArrayList of all the courses the user
  *  needs, and each course contains all the grades the user needs.
  */
@@ -66,8 +66,7 @@ public class Manager {
      *  in courseList.
      */
     public String getCourseDetails(int i) {
-        String s = "";
-        s += courseList.get(i);
+        String s = courseList.get(i).toString();
         return s;
     }
 }

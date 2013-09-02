@@ -155,8 +155,7 @@ public class Course {
 	 * Writes course information into a string.
 	 */
     public String toString() {
-        String s = "";
-        s += name + "\n";
+        String s = name + "\n";
         s += "Credits: " + creditContribution + "\n";
         s += "Current Mark: " + currMark + "%";
         return s;
@@ -171,7 +170,6 @@ public class Course {
         // Do not check grade if checkGrade is greater or equal to the
         // list size
         if (checkGrade < marksList.size()) {
-            s += "\n";
             s += marksList.get(checkGrade).toString();
         } else {
             System.out.println("\nInvalid number; try again.");

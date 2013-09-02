@@ -79,7 +79,7 @@ public class Grade {
 			s += "Total possible score: " + totalScore + "\n";
 		if (currMark != 0.0)
 			s += "Current mark: " + currMark + "%\n";
-		s += "Worth to final mark: " + worth + "%\n";
+		s += "Worth to final mark: " + worth;
 		return s;
 	}	
 }
