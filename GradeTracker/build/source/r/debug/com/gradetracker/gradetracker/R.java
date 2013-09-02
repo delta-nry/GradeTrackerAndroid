@@ -868,7 +868,8 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int content_new=0x7f020057;
-        public static final int ic_launcher=0x7f020058;
+        public static final int content_remove=0x7f020058;
+        public static final int ic_launcher=0x7f020059;
     }
     public static final class id {
         public static final int action_bar=0x7f07001a;
@@ -886,8 +887,9 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f07002f;
         public static final int action_mode_bar_stub=0x7f07002e;
         public static final int action_mode_close_button=0x7f070022;
-        public static final int action_new_course=0x7f070044;
-        public static final int action_settings=0x7f070045;
+        public static final int action_new_course=0x7f070045;
+        public static final int action_remove_course=0x7f070044;
+        public static final int action_settings=0x7f070046;
         public static final int activity_chooser_view_content=0x7f070023;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
@@ -1000,9 +1002,10 @@ containing a value of this type.
         /**  From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/strings.xml 
          */
         public static final int action_new_course=0x7f0a000d;
-        public static final int action_settings=0x7f0a000e;
-        public static final int app_name=0x7f0a000f;
-        public static final int hello_world=0x7f0a0010;
+        public static final int action_remove_course=0x7f0a000e;
+        public static final int action_settings=0x7f0a000f;
+        public static final int app_name=0x7f0a0010;
+        public static final int hello_world=0x7f0a0011;
     }
     public static final class style {
         /**  From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/styles.xml 

@@ -156,7 +156,7 @@ public class Course {
 	 */
     public String toString() {
         String s = "";
-        s += "\n" + name + "\n";
+        s += name + "\n";
         s += "Credits: " + creditContribution + "\n";
         s += "Current Mark: " + currMark + "%";
         return s;

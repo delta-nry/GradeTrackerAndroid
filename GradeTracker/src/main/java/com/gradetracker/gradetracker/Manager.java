@@ -54,7 +54,7 @@ public class Manager {
     // Deletes course in the last index number of courseList.
     public void deleteCourse(int toDel) {
         // Don't delete a nonexistent Course in courseList
-        if (toDel < courseList.size()) {
+        if (toDel >= 0 && toDel < courseList.size()) {
             courseList.remove(toDel);
             System.out.println("\n" + "Deleted the course.");
         }
