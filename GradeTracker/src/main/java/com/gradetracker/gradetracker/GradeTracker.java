@@ -1,11 +1,18 @@
 package com.gradetracker.gradetracker;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.util.SparseArray;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
@@ -31,7 +38,7 @@ public class GradeTracker extends ActionBarActivity {
         // Delete 'groups' SparseArray entries that have an index larger than theManager.getCourseListSize()
         // (these entries have already been removed by another method)
         for (int j = theManager.getCourseListSize(); j < groups.size(); j++) {
-            // May change to groups.removeAt(j), but requires API 11
+            // May change to groups.removeAt(j), but requires Android API 11
             groups.remove(j);
         }
 
@@ -66,7 +73,8 @@ public class GradeTracker extends ActionBarActivity {
                 removeCourse(theManager);
                 return true;
             case R.id.action_new_course:
-                addCourse("New Course", theManager);
+                DialogFragment newFragment = new AddCourseDialogFragment();
+                newFragment.show(getSupportFragmentManager(), "add_course");
                 return true;
             case R.id.action_settings:
                 openSettings();
@@ -75,8 +83,82 @@ public class GradeTracker extends ActionBarActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    public void addCourse(String name, Manager theManager) {
-        Course newCourse = new Course(name, 4);
+
+    public class AddCourseDialogFragment extends DialogFragment {
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            // Get the layout inflater
+            LayoutInflater inflater = getActivity().getLayoutInflater();
+            builder.setTitle(R.string.action_new_course);
+            final View mView = inflater.inflate(R.layout.dialog_addcourse, null);
+
+            // Inflate and set the layout for the dialog
+            // Pass null as the parent view because its going in the dialog layout
+            builder.setView(mView)
+                    // Add action buttons
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        //@Override
+                        public void onClick(DialogInterface dialog, int id) {
+                            // Check for NullPointerExceptions
+                            EditText mText1;
+                            try {
+                                mText1 = (EditText)mView.findViewById(R.id.course_name);
+                            } catch (NullPointerException e) {
+                                return;
+                            }
+                            EditText mText2 = (EditText)mView.findViewById(R.id.course_credits);
+                            String courseName;
+                            try {
+                                courseName = mText1.getText().toString();
+                            } catch (NullPointerException e) {
+                                return;
+                            }
+                            String courseCreditsString;
+                            try {
+                                courseCreditsString = mText2.getText().toString();
+                            } catch (NullPointerException e) {
+                                return;
+                            }
+                            int courseCreditsInt;
+                            try {
+                                courseCreditsInt = Integer.valueOf(courseCreditsString);
+                            } catch (NumberFormatException e) {
+                                courseCreditsInt = -1;
+                            }
+                            // Check for empty/invalid values
+                            if (courseName != null && !courseName.isEmpty()) {
+                                if (courseCreditsInt >= 0) {
+                                    addCourse(courseName, courseCreditsInt, theManager);
+                                }
+                                else {
+                                    addCourse(courseName, 0, theManager);
+                                }
+                            }
+                            else if (courseCreditsInt >= 0) {
+                                if (courseName != null && !courseName.isEmpty()) {
+                                    addCourse(courseName, courseCreditsInt, theManager);
+                                }
+                                else {
+                                    addCourse("New Course", courseCreditsInt, theManager);
+                                }
+                            }
+                            else {
+                                addCourse("New Course", 0, theManager);
+                            }
+                        }
+                    })
+                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            // Don't create anything
+                        }
+                    });
+            return builder.create();
+        }
+    }
+
+    public void addCourse(String name, int credits, Manager theManager) {
+        Course newCourse = new Course(name, credits);
         theManager.addCourse(newCourse);
         updateView(theManager);
     }

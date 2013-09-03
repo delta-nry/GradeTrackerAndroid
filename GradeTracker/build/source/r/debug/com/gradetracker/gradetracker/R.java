@@ -887,14 +887,16 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f07002f;
         public static final int action_mode_bar_stub=0x7f07002e;
         public static final int action_mode_close_button=0x7f070022;
-        public static final int action_new_course=0x7f070045;
-        public static final int action_remove_course=0x7f070044;
-        public static final int action_settings=0x7f070046;
+        public static final int action_new_course=0x7f070047;
+        public static final int action_remove_course=0x7f070046;
+        public static final int action_settings=0x7f070048;
         public static final int activity_chooser_view_content=0x7f070023;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
         public static final int checkbox=0x7f07002b;
         public static final int collapseActionView=0x7f070011;
+        public static final int course_credits=0x7f070044;
+        public static final int course_name=0x7f070043;
         public static final int default_activity_button=0x7f070026;
         public static final int dialog=0x7f070012;
         public static final int disableHome=0x7f070008;
@@ -938,7 +940,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f07001c;
         public static final int submit_area=0x7f07003f;
         public static final int tabMode=0x7f070002;
-        public static final int textView1=0x7f070043;
+        public static final int textView1=0x7f070045;
         public static final int title=0x7f070029;
         public static final int title_container=0x7f070030;
         public static final int top_action_bar=0x7f07001e;
@@ -978,9 +980,10 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030016;
         public static final int abc_search_view=0x7f030017;
         public static final int activity_gradetracker=0x7f030018;
-        public static final int expandable_list_child_item=0x7f030019;
-        public static final int expandable_list_group_item=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int dialog_addcourse=0x7f030019;
+        public static final int expandable_list_child_item=0x7f03001a;
+        public static final int expandable_list_group_item=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int grade_tracker=0x7f0c0000;
@@ -1005,7 +1008,11 @@ containing a value of this type.
         public static final int action_remove_course=0x7f0a000e;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a0010;
-        public static final int hello_world=0x7f0a0011;
+        public static final int cancel=0x7f0a0011;
+        public static final int course_credits=0x7f0a0012;
+        public static final int course_name=0x7f0a0013;
+        public static final int hello_world=0x7f0a0014;
+        public static final int ok=0x7f0a0015;
     }
     public static final class style {
         /**  From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/styles.xml 
