@@ -70,17 +70,83 @@ public class GradeTracker extends ActionBarActivity {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.action_remove_course:
-                removeCourse(theManager);
+                DialogFragment removeCourseFragment = new RemoveCourseDialogFragment();
+                if (theManager.getCourseListSize() > 0) {
+                    removeCourseFragment.show(getSupportFragmentManager(), "remove_course");
+                }
                 return true;
             case R.id.action_new_course:
-                DialogFragment newFragment = new AddCourseDialogFragment();
-                newFragment.show(getSupportFragmentManager(), "add_course");
+                DialogFragment newCourseFragment = new AddCourseDialogFragment();
+                newCourseFragment.show(getSupportFragmentManager(), "add_course");
                 return true;
             case R.id.action_settings:
                 openSettings();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public class RemoveCourseDialogFragment extends DialogFragment {
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            if (theManager.getCourseListSize() == 0) {
+                // Gracefully exit with a dialog
+                builder.setTitle(R.string.action_error_title);
+                builder.setMessage(R.string.action_error_message_no_course);
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // Don't remove anything
+                    }
+                });
+                return builder.create();
+            }
+            // Get the layout inflater
+            LayoutInflater inflater = getActivity().getLayoutInflater();
+            builder.setTitle(R.string.action_remove_course);
+            builder.setMessage("0-" + (theManager.getCourseListSize() - 1));
+            final View mView = inflater.inflate(R.layout.dialog_removecourse, null);
+
+            // Inflate and set the layout for the dialog
+            // Pass null as the parent view because its going in the dialog layout
+            builder.setView(mView)
+                    // Add action buttons
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        //@Override
+                        public void onClick(DialogInterface dialog, int id) {
+                            // Check for NullPointerExceptions
+                            EditText mText1;
+                            try {
+                                mText1 = (EditText) mView.findViewById(R.id.course_name);
+                            } catch (NullPointerException e) {
+                                return;
+                            }
+                            String courseNameString;
+                            try {
+                                courseNameString = mText1.getText().toString();
+                            } catch (NullPointerException e) {
+                                return;
+                            }
+                            int courseNameIndex;
+                            try {
+                                courseNameIndex = Integer.valueOf(courseNameString);
+                            } catch (NumberFormatException e) {
+                                courseNameIndex = -1;
+                            }
+                            if (courseNameIndex >= 0 && courseNameIndex < theManager.getCourseListSize()) {
+                                removeCourse(courseNameIndex, theManager);
+                            } else {
+                                // Don't remove anything
+                            }
+                        }
+                    })
+                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            // Don't remove anything
+                        }
+                    });
+            return builder.create();
         }
     }
 
@@ -167,8 +233,8 @@ public class GradeTracker extends ActionBarActivity {
         Toast.makeText(this, "Action settings selected.", Toast.LENGTH_SHORT).show();
     }
 
-    public void removeCourse(Manager theManager) {
-        theManager.deleteCourse(theManager.getCourseListSize() - 1);
+    public void removeCourse(int index, Manager theManager) {
+        theManager.deleteCourse(index);
         updateView(theManager);
     }
 

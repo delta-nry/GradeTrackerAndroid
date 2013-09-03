@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="117b5501-f5da-49fc-b280-b82b1de9649c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_addcourse.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_removecourse.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/GradeTracker.java" afterPath="$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/GradeTracker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GradeTracker/build/source/r/debug/com/gradetracker/gradetracker/R.java" afterPath="$PROJECT_DIR$/GradeTracker/build/source/r/debug/com/gradetracker/gradetracker/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GradeTracker/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/GradeTracker/src/main/res/values/strings.xml" />
@@ -40,7 +40,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -77,6 +76,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -86,16 +86,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GradeTracker.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GradeTracker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/GradeTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="76" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2595">
+            <state line="47" column="66" selection-start="2109" selection-end="2109" vertical-scroll-proportion="-0.41811848" vertical-offset="735" max-vertical-offset="3510">
               <folding>
-                <element signature="e#4384#7063#0" expanded="true" />
-                <element signature="e#7040#7041#0" expanded="true" />
-                <element signature="e#7121#7339#0" expanded="true" />
-                <element signature="e#7316#7317#0" expanded="true" />
+                <element signature="e#4391#4593#0" expanded="true" />
+                <element signature="e#4574#4575#0" expanded="true" />
+                <element signature="e#5256#6745#0" expanded="true" />
+                <element signature="e#6722#6723#0" expanded="true" />
+                <element signature="e#6803#7021#0" expanded="true" />
+                <element signature="e#6998#6999#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="38" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Manager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/Manager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="17" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="1155">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Course.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/Course.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3210">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,7 +132,7 @@
       <file leaf-file-name="dialog_addcourse.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_addcourse.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="576" selection-end="576" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="450">
+            <state line="5" column="11" selection-start="0" selection-end="977" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -112,10 +141,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/values/strings.xml">
+      <file leaf-file-name="dialog_removecourse.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_removecourse.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="249" selection-end="249" vertical-scroll-proportion="0.15679443" vertical-offset="0" max-vertical-offset="574">
+            <state line="13" column="37" selection-start="575" selection-end="575" vertical-scroll-proportion="-7.2222223" vertical-offset="0" max-vertical-offset="300">
+              <folding>
+                <element signature="e#515#537#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -175,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/GradeTracker/src/main/res/layout/expandable_list_child_item.xml" />
         <option value="$PROJECT_DIR$/GradeTracker/build.gradle" />
         <option value="$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/ActionBar.java" />
         <option value="$PROJECT_DIR$/GradeTracker/src/main/res/layout/activity_gradetracker.xml" />
@@ -189,15 +231,15 @@
         <option value="$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/Course.java" />
         <option value="$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_addcourse.xml" />
         <option value="$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/AddCourseDialogFragment.java" />
-        <option value="$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/GradeTracker.java" />
+        <option value="$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_removecourse.xml" />
         <option value="$PROJECT_DIR$/GradeTracker/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/GradeTracker.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="233" />
     <option name="y" value="22" />
-    <option name="width" value="959" />
+    <option name="width" value="1920" />
     <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -226,7 +268,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -549,6 +590,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -564,12 +606,12 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="9f09de68" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_Nexus_7_2012" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_7_4.3_Emulator" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -772,17 +814,21 @@
       <created>1378101935361</created>
       <updated>1378101935361</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added name and credits creation when adding a course.">
+      <created>1378168053635</created>
+      <updated>1378168053635</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="233" y="22" width="959" height="979" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3388947" sideWeight="0.68099546" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33854166" sideWeight="0.68099546" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -797,7 +843,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921794" sideWeight="0.68099546" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12447917" sideWeight="0.68099546" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31900454" sideWeight="0.4995169" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -821,22 +867,13 @@
     <MESSAGE value="Added the ability to add multiple courses and remove the last added course, Manager.java bug fix, deleted unnecessary classes" />
     <MESSAGE value="Added the ability to add multiple courses and remove the last added course, Manager.java bug fix, deleted unnecessary classes." />
     <MESSAGE value="Minor changes to how grades are created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes to how grades are created" />
+    <MESSAGE value="Added name and credits creation when adding a course." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added name and credits creation when adding a course." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/layout/expandable_list_group_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="534">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/menu/grade_tracker.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
@@ -862,13 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/ExpandableListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
@@ -886,20 +916,6 @@
     <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="0" selection-start="7103" selection-end="7103" vertical-scroll-proportion="0.0" vertical-offset="2636" max-vertical-offset="3210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="17" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
@@ -928,21 +944,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/GradeTracker.java">
+    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="76" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2595">
-          <folding>
-            <element signature="e#4384#7063#0" expanded="true" />
-            <element signature="e#7040#7041#0" expanded="true" />
-            <element signature="e#7121#7339#0" expanded="true" />
-            <element signature="e#7316#7317#0" expanded="true" />
-          </folding>
+        <state line="29" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_addcourse.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="576" selection-end="576" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="450">
+        <state line="5" column="11" selection-start="0" selection-end="977" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
@@ -950,10 +961,50 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/layout/dialog_removecourse.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="37" selection-start="575" selection-end="575" vertical-scroll-proportion="-7.2222223" vertical-offset="0" max-vertical-offset="300">
+          <folding>
+            <element signature="e#515#537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="17" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="249" selection-end="249" vertical-scroll-proportion="0.15679443" vertical-offset="0" max-vertical-offset="574">
+        <state line="14" column="38" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GradeTracker/src/main/java/com/gradetracker/gradetracker/GradeTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="66" selection-start="2109" selection-end="2109" vertical-scroll-proportion="-0.41811848" vertical-offset="735" max-vertical-offset="3510">
+          <folding>
+            <element signature="e#4391#4593#0" expanded="true" />
+            <element signature="e#4574#4575#0" expanded="true" />
+            <element signature="e#5256#6745#0" expanded="true" />
+            <element signature="e#6722#6723#0" expanded="true" />
+            <element signature="e#6803#7021#0" expanded="true" />
+            <element signature="e#6998#6999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

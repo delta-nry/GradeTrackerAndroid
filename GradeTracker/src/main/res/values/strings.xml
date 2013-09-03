@@ -10,5 +10,8 @@
     <string name="course_credits">Credits</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
+    <string name="course_index">Index</string>
+    <string name="action_error_title">Error</string>
+    <string name="action_error_message_no_course">There are no courses available.</string>
 
 </resources>
