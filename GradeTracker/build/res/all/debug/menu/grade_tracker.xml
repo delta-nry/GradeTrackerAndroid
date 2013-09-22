@@ -1,16 +1,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:gradetracker="http://schemas.android.com/apk/res-auto" >
     <!-- Search, should appear as action button -->
-    <item android:id="@+id/action_remove_course"
+
+    <item android:id="@+id/action_edit_grades"
         android:orderInCategory="100"
-        android:icon="@drawable/content_remove"
-        android:title="@string/action_remove_course"
+        android:icon="@drawable/content_edit"
+        android:title="@string/action_edit_grades"
         gradetracker:showAsAction="ifRoom"  />
 
     <item android:id="@+id/action_new_course"
         android:orderInCategory="100"
         android:icon="@drawable/content_new"
         android:title="@string/action_new_course"
+        gradetracker:showAsAction="ifRoom"  />
+
+    <item android:id="@+id/action_remove_course"
+        android:orderInCategory="100"
+        android:icon="@drawable/content_remove"
+        android:title="@string/action_remove_course"
         gradetracker:showAsAction="ifRoom"  />
 
     <item android:id="@+id/action_settings"

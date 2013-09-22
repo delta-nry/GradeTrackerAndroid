@@ -506,6 +506,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <!-- From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/strings.xml -->
+    <string name="action_edit_grades">Edit grades</string>
     <string name="action_error_message_no_course">There are no courses available.</string>
     <string name="action_error_title">Error</string>
     <string name="action_new_course">Add course</string>

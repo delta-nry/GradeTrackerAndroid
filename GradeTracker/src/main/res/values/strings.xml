@@ -6,6 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_new_course">Add course</string>
     <string name="action_remove_course">Remove course</string>
+    <string name="action_edit_grades">Edit grades</string>
     <string name="course_name">Name</string>
     <string name="course_credits">Credits</string>
     <string name="ok">OK</string>

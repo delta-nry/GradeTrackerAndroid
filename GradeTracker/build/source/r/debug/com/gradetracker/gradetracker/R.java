@@ -867,9 +867,10 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int content_new=0x7f020057;
-        public static final int content_remove=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
+        public static final int content_edit=0x7f020057;
+        public static final int content_new=0x7f020058;
+        public static final int content_remove=0x7f020059;
+        public static final int ic_launcher=0x7f02005a;
     }
     public static final class id {
         public static final int action_bar=0x7f07001a;
@@ -882,14 +883,15 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f070021;
         public static final int action_bar_title=0x7f070020;
         public static final int action_context_bar=0x7f07001b;
+        public static final int action_edit_grades=0x7f070046;
         public static final int action_menu_divider=0x7f070015;
         public static final int action_menu_presenter=0x7f070016;
         public static final int action_mode_bar=0x7f07002f;
         public static final int action_mode_bar_stub=0x7f07002e;
         public static final int action_mode_close_button=0x7f070022;
         public static final int action_new_course=0x7f070047;
-        public static final int action_remove_course=0x7f070046;
-        public static final int action_settings=0x7f070048;
+        public static final int action_remove_course=0x7f070048;
+        public static final int action_settings=0x7f070049;
         public static final int activity_chooser_view_content=0x7f070023;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
@@ -1005,18 +1007,19 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000c;
         /**  From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/strings.xml 
          */
-        public static final int action_error_message_no_course=0x7f0a000d;
-        public static final int action_error_title=0x7f0a000e;
-        public static final int action_new_course=0x7f0a000f;
-        public static final int action_remove_course=0x7f0a0010;
-        public static final int action_settings=0x7f0a0011;
-        public static final int app_name=0x7f0a0012;
-        public static final int cancel=0x7f0a0013;
-        public static final int course_credits=0x7f0a0014;
-        public static final int course_index=0x7f0a0015;
-        public static final int course_name=0x7f0a0016;
-        public static final int hello_world=0x7f0a0017;
-        public static final int ok=0x7f0a0018;
+        public static final int action_edit_grades=0x7f0a000d;
+        public static final int action_error_message_no_course=0x7f0a000e;
+        public static final int action_error_title=0x7f0a000f;
+        public static final int action_new_course=0x7f0a0010;
+        public static final int action_remove_course=0x7f0a0011;
+        public static final int action_settings=0x7f0a0012;
+        public static final int app_name=0x7f0a0013;
+        public static final int cancel=0x7f0a0014;
+        public static final int course_credits=0x7f0a0015;
+        public static final int course_index=0x7f0a0016;
+        public static final int course_name=0x7f0a0017;
+        public static final int hello_world=0x7f0a0018;
+        public static final int ok=0x7f0a0019;
     }
     public static final class style {
         /**  From: file:/Users/nathan/GitHub%20Projects/GradeTrackerProject/GradeTracker/src/main/res/values/styles.xml 
