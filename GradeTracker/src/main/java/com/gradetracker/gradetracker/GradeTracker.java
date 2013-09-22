@@ -50,7 +50,7 @@ public class GradeTracker extends ActionBarActivity {
             }
             for (int i = 0; i < theManager.getCourse(j).getSize(); i++) {
                 // Create new grades
-                Grade grade = new Grade("New Grade", 100.0);
+                Assignment grade = new Assignment();
                 theManager.getCourse(j).addItem(grade);
                 String s = theManager.getCourse(j).getGradeInfo(i);
                 group.children.add(s);

@@ -1,72 +1,77 @@
 package com.gradetracker.gradetracker;
 
-public class Grade {
+/*
+*	Abstract implementation of the Grade object.
+*	This allows for multiple types of Grades to be implemented,
+*	so that the user can have a more accurate projection of their
+*	final mark when requested.
+*	Currently, the following types are implemented:
+*	- Assignment
+*	- Quiz
+*	- Test
+*	- Lab
+*	- Participation
+*	- Essay
+*/
+public abstract class Grade {
 
 	private String name;
 	private double currMark;
 	private double worth;
 	private int myScore;
 	private int totalScore;
-	/*
-     * Constructor for the Grade, which only requires a description 
-	 * and worth to course
-	 */
-	public Grade(String theName, double theWorth) {
-		this.name = theName;
-		this.worth = theWorth;
-		this.currMark = 0.0;
-		this.myScore = 0;
-		this.totalScore = 0;
-	}
-	// Re-assigns a description for the Grade
+
+    public abstract String getType();
+    // Sets name to passed in name
 	public void setName(String newName) {
 		this.name = newName;
-	}	
-	// Returns the assigned description
+	}
+    // Returns the name of this Grade
 	public String getName() {
 		return name;
 	}
-	// Re-assigns the worth of this Grade towards the course mark
-	public void setWorth(double newWorth) {
-		this.worth = newWorth;
-	}
-	// Returns assigned worth towards course mark
+    // Sets the worth of this grade towards overall mark, provided it is greater than 0 and less than 1
+    public void setWorth(double newWorth) {
+        if (newWorth > 0.0 && newWorth < 1.0)
+            this.worth = newWorth;
+    }
+    // Returns worth of overall mark
 	public double getWorth() {
 		return worth;
 	}
-	// Assigns a percentage-based mark to the Grade
-	public void setCurrMark(double theMark) {
-		this.currMark = theMark;
-	}
-	// Returns current mark
+    // Sets current mark to passed in mark, provided it is greater than 0
+    public void setCurrMark(double theMark) {
+        if (theMark > 0.0)
+            this.currMark = theMark;
+    }
+	// Returns overall mark
 	public double getCurrMark() {
 		return currMark;
 	}
-	/* Calculates current mark, if your score and total score are 
-	 * defined
-	 */
-	public void calculateCurrMark() {
-		double temp = (double)myScore * (double)totalScore;
-		this.currMark = temp;
-	}
-	// Assigns the score you got on the marked item
-	public void setMyScore(int newScore) {
-		if (totalScore != 0) {
-			this.myScore = newScore;
-			this.calculateCurrMark();
-		} else {
-			System.out.println("No total score defined. Define total score.");
-		}
-	}	
-	// Returns the score you got on the marked item
+    // Given my score and total score, calculates current mark
+    public void calculateCurrMark() {
+        double temp = (double)myScore/(double)totalScore;
+        temp *= 100;
+        this.currMark = temp;
+    }
+    // Sets my score only if total score is more than 0 and new score is greater than 0
+    public void setMyScore(int newScore) {
+        if (totalScore != 0 && newScore > 0) {
+            this.myScore = newScore;
+            this.calculateCurrMark();
+        }
+    }
+	// Returns my score
 	public int getMyScore() {
 		return myScore;
 	}
-	// Assigns the maximum score you can achieve on this item
+    // Sets total score, provided it is greater than 0
 	public void setTotalScore(int maxScore) {
-		this.totalScore = maxScore;
+        if (maxScore > 0) {
+		    this.totalScore = maxScore;
+        }
 	}
-	// Returns the total score possible on the assignment
+	// Returns the total score of Grade
 	public int getTotalScore() {
 		return totalScore;
 	}
