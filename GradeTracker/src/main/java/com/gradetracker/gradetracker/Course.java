@@ -18,7 +18,7 @@ public class Course {
 	 */
     public Course(String theName, int credits) {
         this.name = theName;
-		this.marksList = new ArrayList<Grade>();
+		this.marksList = new ArrayList<Grade>(1);
         this.creditContribution = credits;
         this.overallMark = 0.0;
         this.currMark = 0.0;
@@ -50,7 +50,7 @@ public class Course {
         return s;
     }
     // Gets the size of the marksList
-    public int getMarksListSize() {
+    public int getSize() {
         return marksList.size();
     }
     /*
@@ -72,18 +72,15 @@ public class Course {
 	 */
     public void calculateCurrMark() {
         this.currMark = 0.0;
-        double totalObtainedWorth = 0;
+        double currWorth = 0.0;
         for (int i = 0; i < marksList.size(); i++) {
-            if (marksList.get(i).getCurrMark() != 0.0)
-                totalObtainedWorth += marksList.get(i).getWorth();
+            currWorth += marksList.get(i).getWorth();
         }
-        double tempMark = 0.0;
+        double tempWorth = 0.0;
         for (int i = 0; i < marksList.size(); i++) {
-            tempMark = marksList.get(i).getCurrMark();
-            this.currMark += (marksList.get(i).getWorth()/totalObtainedWorth)
-                             *tempMark;
+            tempWorth = marksList.get(i).getWorth()/currWorth;
+            currMark += marksList.get(i).getCurrMark()*tempWorth;
         }
-		currMark *= 100;
     }
     // Returns the current mark
     public double getCurrMark() {
@@ -98,10 +95,11 @@ public class Course {
 	 */
     public void calculateOverallMark() {
         this.overallMark = 0.0;
+        double temp = 0.0;
         for (int i = 0; i < marksList.size(); i++) {
-            overallMark += marksList.get(i).getWorth()*marksList.get(i).getCurrMark();
+            temp = marksList.get(i).getWorth()*marksList.get(i).getCurrMark();
+            this.overallMark += temp;
         }
-		overallMark *= 100;
     }
     // Returns the overall mark
     public double getOverallMark() {
